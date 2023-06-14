@@ -1,0 +1,8 @@
+.vscode
+
+cookies.json
+credentials.json
+!example/credentials.json
+
+Social-Picker-Twitter-Scrapper*
+*.local.*
