@@ -88,6 +88,10 @@ func getTweet(cookiesFilePath string, tweetId string) {
 		socialPost.Medias = append(socialPost.Medias, Media{"video", tweet.Videos[i].URL, tweet.Videos[i].URL})
 	}
 
+	for i := 0; i < len(tweet.GIFs); i++ {
+		socialPost.Medias = append(socialPost.Medias, Media{"gif", tweet.GIFs[i].URL, tweet.GIFs[i].URL})
+	}
+
 	data, err := json.Marshal(socialPost)
 	if err != nil {
 		errorOutput.Println("Error with JSON encoding of socialPost:")

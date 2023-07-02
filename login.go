@@ -7,7 +7,6 @@ import (
 	"os"
 
 	twitterscraper "github.com/n0madic/twitter-scraper"
-	// twitterscraper "github.com/n0madic/twitter-scraper"
 )
 
 type Credentials struct {
